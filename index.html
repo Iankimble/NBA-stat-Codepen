@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>NBA stats</title>
+
+<!--CSS Stylesheet-->
+<link rel="stylesheet" href="./style.css">
+
+<!--Bootstrap Styling CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!--JQuery CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id="body">
+    <!--Navbar-->
+    <ul id="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!--Main Content/Container-->
+    <div class='container'>
+<div class="row">
+    <div class='col'>
+    <h1>NBA Stats</h1>
+    <img src= "nba_logo.png" alt="NBA logo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor elit sed vulputate mi sit amet mauris. Mi bibendum neque egestas congue quisque egestas diam in. Quam elementum pulvinar etiam non quam. Duis at tellus at urna condimentum mattis pellentesque id nibh. Est ullamcorper eget nulla facilisi. Potenti nullam ac tortor vitae purus faucibus ornare. Sed id semper risus in hendrerit gravida. Sed nisi lacus sed viverra. Mauris sit amet massa vitae tortor condimentum lacinia quis.</p>
+</div>
+</div>
+
+<!--Input field to find our player-->
+<div class="row"> 
+        <label for="fname">Enter Player's name:</label>
+        <input type="text" class="form-inline" placeholder="LeBron James" id="key" value="">
+<button type="button" class="btn btn-primary"  onclick="getNBAData()" id="search">Primary</button>
+</div>
+
+<!--Div that will display our dynamic API data-->
+<!-- The data will be displayed as a table that will show all the players stats-->
+<div id ='data'>
+</div>
+
+</div>
+
+<!-- Our External JavaScript code-->
+<script src="script.js"></script>
+<script src="config.js"></script>
+</body>
+</html> 
